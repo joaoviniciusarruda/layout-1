@@ -6,9 +6,18 @@ header{
 	height: 20vh;
 	display: flex;
 	justify-content: center;
+    align-items:center;
+}
+header .logo{
+        width: 150px;
+    }
+header .logo img{
+       width: 100%;
 }
 header ul{
 	display: flex;
+    align-items: center;
+    height: 20vh;
 }
 header ul li{
 	list-style: none;
@@ -24,11 +33,13 @@ header ul li a:hover{
 	background: black;
 	color: #fff;
 }
+div.content{
+    display:flex;
+}
 main{
 	width: 80%;
 	height: 60vh;
-	background: red;
-	float: left;
+    border:1px solid black;
 }
 aside{
 	width: 20%;
