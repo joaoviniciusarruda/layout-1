@@ -1,5 +1,4 @@
 
-
 *{margin: 0; padding:0; font-family: arial;}
 header{
 	width: 100%;
@@ -12,7 +11,7 @@ header .logo{
         width: 150px;
     }
 header .logo img{
-       width:150%;
+       width: 100%;
 }
 header ul{
 	display: flex;
@@ -30,15 +29,14 @@ header ul li a{
 	transition: all 500ms ease-in 200ms;
 }
 header ul li a:hover{
-	background: rgba(0, 0, 0, 0.487);
-	color: #ff0000;
+	background: black;
+	color: #fff;
 }
 div.content{
     display:flex;
 }
 main{
 	width: 80%;
-    border:0,5px solid black;
 }
 main .bloco-principal{
     width: 100%;
@@ -67,9 +65,11 @@ main .noticia a{
 main .grid-3{
 	display: flex;
 	padding: 15px;
+	text-align: center;
+	flex-wrap: wrap;
 }
 main .grid-3 .coluna{
-	width: 33%;
+	width: 31%;
 	margin: 10px;
 }
 main .grid-3 .coluna img{
@@ -80,12 +80,11 @@ main .grid-3 .coluna h3{
 	text-align: center;
 	color: red;
 }
-
-
 main .grid-3 .coluna p{
 	text-align: center;
 	color:blue;
 	font-size: 18px;
+	margin-bottom: 20px;
 }
 main .grid-3 .coluna a{
 	background: red;
@@ -102,24 +101,62 @@ main .grid-3 .coluna a:hover{
 
 aside{
 	width: 20%;
-	height: 60vh;
-	background: gray;
 }
-aside.img{
-    width:0%;
-    margin:0px;
-}
-aside.a{
-    transition: all 0.3s ease-out;
-}
-aside.a:hover img{
-    transform: scale(1.5);
-}
-footer{
+aside img{
 	width: 100%;
-	height: 20vh;
-	background: black;
-}	
-body{
-    background: #000;
+	margin: 10px;
+}
+aside a img{
+	transition: all 0.3s ease-in;
+}
+aside a:hover img{
+	width: 31%;
+	margin: 10px;
+	color: yellow;
+	text-transform: uppercase;
+}
+footer form{
+	border: 1px solid white;
+	display: flex;
+	flex-direction: column;
+}
+footer form input[type='text']{
+	height: 40px;
+	background: white;
+	border: 0;
+	margin-bottom: 5px;
+	width: 100%;
+}
+footer form input[type='submit']{
+	background: blue;
+	color: white;
+	padding: 7px 15px;
+	border: 0;
+}
+footer form input[type='submit']:hover{
+	background: red;
+}
+footer .footer-grid{
+	margin: 10px;
+	width: 33%;
+}
+footer p{
+	color: white;
+}
+footer .redes div img{
+	width: 60px;
+	margin: 5px;
+}
+footer .redes div{
+	color: #fff;
+}
+footer .redes div{
+	display: flex;
+	align-items: center;
+}
+@media screen and (max-width: 600px ){
+    main .grid-3 .coluna{
+        width: 47%;
+        margin: 10px;
+}
 }
